@@ -18,7 +18,20 @@ export class AppController {
 
     res.set({
       'Content-Type': 'application/pdf',
-      'Content-Disposition': 'attachment; filename=example.pdf',
+      'Content-Disposition': `attachment; filename=attendance-report-${new Date().toISOString().split('T')[0]}.pdf`,
+      'Content-Length': buffer.length,
+    });
+
+    res.end(buffer);
+  }
+  @Get('details/pdf')
+  async getDetailsPdf(@Res() res: Response) {
+    // return this.appService.getpdf();
+    const buffer = await this.appService.getDetailsPdf();
+
+    res.set({
+      'Content-Type': 'application/pdf',
+      'Content-Disposition': `attachment; filename=attendance-report-details-${new Date().toISOString().split('T')[0]}.pdf`,
       'Content-Length': buffer.length,
     });
 
