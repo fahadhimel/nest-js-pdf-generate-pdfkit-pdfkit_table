@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 import { Logger } from '@nestjs/common';
 
 async function bootstrap() {
-  const PORT = 4001;
+  const PORT = 4002;
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
