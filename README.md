@@ -65,7 +65,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## Stay in touch
 
 - Author - [Fahad Himel](https://github.com/fahadhimel)
-- Website - [https://fahadhimel.com](https://nestjs.com/](https://fahadhimel.github.io/cv-resume/))
+- Website - [https://fahadhimel.com](https://fahadhimel.github.io/cv-resume/)
 - Linkedin - [linkedin profile](https://bd.linkedin.com/in/fahad-himel-481267227)
 
 ## License
